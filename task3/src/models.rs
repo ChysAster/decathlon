@@ -38,12 +38,15 @@ pub struct WeatherInfo {
 pub struct City {
     pub id: i64,
     pub name: String,
+    #[allow(dead_code)]
     pub created_at: String,
 }
 
 #[derive(Debug)]
 pub struct WeatherRecord {
+    #[allow(dead_code)]
     pub id: i64,
+    #[allow(dead_code)]
     pub city_id: i64,
     pub temperature: f64,
     pub description: String,
